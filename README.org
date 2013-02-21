@@ -4,3 +4,10 @@
 cat fdf-data.json | ./fill-pdf.sh input.pdf output.pdf
 
 ./fdf.pl input.pdf will print json with form fields
+
+* dependencies
+
+JSON
+PDF::FDF::Simple
+Text::Iconv
+

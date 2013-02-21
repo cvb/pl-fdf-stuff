@@ -3,8 +3,6 @@
 use JSON;
 use PDF::FDF::Simple;
 
-use Data::Dumper;
-
 $PDFTK="pdftk";
 
 $PDF = $ARGV[0];

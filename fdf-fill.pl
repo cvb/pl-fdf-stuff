@@ -4,7 +4,6 @@ use JSON;
 use PDF::FDF::Simple;
 use Text::Iconv;
 
-use Data::Dumper;
 use strict;
 
 my $PDFTK="pdftk";
