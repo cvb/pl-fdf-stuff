@@ -11,3 +11,10 @@ JSON
 PDF::FDF::Simple
 Text::Iconv
 
+** ubuntu packages with perl modules
+   libjson-perl
+   libpdf-fdf-simple-perl
+   libtext-iconv-perl
+
+** pdftk
+
