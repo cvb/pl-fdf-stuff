@@ -2,7 +2,7 @@
 
 use JSON;
 use PDF::FDF::Simple;
-use Text::Iconv;
+use Encode qw/encode decode/;
 
 use strict;
 
@@ -25,8 +25,7 @@ if (@missing){
     exit 1
 }
 
-my $c = Text::Iconv->new("utf-8", "utf-16");
-my %converted = map { ($_, $c->convert($map->{$_})) } keys %$map;
+my %converted = map { ($_, encode("UTF-16", $map->{$_})) } keys %$map;
 
 my $fdf_out = new PDF::FDF::Simple;
 $fdf_out->content({%converted});
